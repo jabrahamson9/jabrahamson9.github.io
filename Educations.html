@@ -1,174 +1,293 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset=""utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	.head1 {
-	  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-	}
-	.head2 {
-	  font-size: calc(11px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-	}
+.responsive{
+  width:100%;
+  height:auto;
+}
+.fa-linkedin-square{
+  color: white;
+}
+.fa-linkedin-square:hover{
+  color: #E0D54E;
+}
+.fa-github-square{
+  color: white;
+}
+.fa-github-square:hover{
+  color: #E0D54E;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+ 
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  opacity: .7;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+html, body, {
 
-	.head3 {
-	  font-size: calc(9px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-	}
+    width: 100%;
+    height: 100%;
+    
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 
-	.years {
-		color: #E0D54E;
-	 	font-size: calc(6px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-	 	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
-	}
+}
 
-	.sidenav {
-	  height: 100%;
-	  width: 0;
-	  position: fixed;
-	  z-index: 1;
-	  top: 0;
-	  left: 0;
-	  background-color: #111;
-	  overflow-x: hidden;
-	  transition: 0.5s;
-	  padding-top: 60px;
-	}
-
-	.sidenav a {
-	  padding: 8px 8px 8px 32px;
-	  text-decoration: none;
-	  font-size: 25px;
-	  color: #818181;
-	  display: block;
-	  transition: 0.3s;
-	}
-
-	.sidenav a:hover {
-	  color: #f1f1f1;
-	}
-
-	.sidenav .closebtn {
-	  position: absolute;
-	  top: 0;
-	  right: 25px;
-	  font-size: 36px;
-	  margin-left: 50px;
-	}
-
-	#main {
-	  transition: margin-left .5s;
-	  padding: 16px;
-	}
-
-	@media screen and (max-height: 450px) {
-	  .sidenav {padding-top: 15px;}
-	  .sidenav a {font-size: 18px;}
-	}
+canvas{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
 
 
-	.dropbtn {
-	  background-color: #000000;
-	  color: white;
-	  padding: 16px;
-	  font-size: 16px;
-	  border: none;
-	  opacity: .7;
-	}
+}
 
-	.dropdown {
-	  position: relative;
-	  display: inline-block;
-	}
 
-	.dropdown-content {
-	  display: none;
-	  position: absolute;
-	  background-color: #f1f1f1;
-	  min-width: 160px;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	  z-index: 1;
-	}
+#particles-js{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 120%;
+  background: #010101;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
-	.dropdown-content a {
-	  color: black;
-	  padding: 12px 16px;
-	  text-decoration: none;
-	  display: block;
-	}
+.bg{
+  
+  height: 100%;
+  width: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.fixed{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 15%;
+  transform: translate(-50%, -50%);
+  background: rgba(150, 150, 150, 0.7);
+}
 
-	.dropdown-content a:hover {background-color: #ddd;}
 
-	.dropdown:hover .dropdown-content {display: block;}
+.text {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  z-index: 0;
 
-	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/*  max-width: 100%;
+  padding: 2em 3em;
+  text-shadow: 0px 0px 2px #131415;
+  font-family: 'Open Sans', sans-serif;*/
+}
+
+div.a{
+  text-align: center;
+}
+
+
+  .h1 {
+    font-size: 4vw;
+    margin-left: 10vw;
+
+
+  }
+  .h2head {
+    font-size: 2.8vw;
+     padding-top: 2vw;
+     width: 100%;
+  }  
+  .h2 {
+    font-size: 2vw;
+  }
+  .h3 {
+    font-size: 2vw;
+  }
+  .h3top {
+    font-size: 1.5vw;
+  }
+  .h3bottom {
+    font-size: 1.5vw;
+    
+  }
+  .margin{
+    margin-left: 15vw ; 
+  }
+
 
 
 </style>
 </head>
 
-<body style="background-color: gray">
-
-	<div id="main">
+<body>
 
 
-	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="file:///C:/Users/JC%20Abrahamson/OneDrive/Documents/Website/jabrahamson9.github.io/Home.html#">Home</a>
-	  <a href="#">Honors</a>
-	  <a href="#">Work Experience</a>
-	  <a href="#">Skills and Interests</a>
-	</div>
-
-	<div id="main">
-	  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Open</span>
-	</div>
-
-	<script>
-	function openNav() {
-	  document.getElementById("mySidenav").style.width = "250px";
-	  document.getElementById("main").style.marginLeft = "250px";
-	}
-
-	function closeNav() {
-	  document.getElementById("mySidenav").style.width = "0";
-	  document.getElementById("main").style.marginLeft= "0";
-	}
-	</script>
+<div id="particles-js"></div>
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
 
 
-	<div style="margin-left: 15%">
-		<h1 class="head1"> Education </br></br></br></h1>
+<div class="text">
 
-		<h2 class="head2"> University of Colorado Boulder College of Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font  class="years">August 2017 - May 2021 (Expected)</font></br></h2>
-		<h3 class="head3"> B.S. Computer Science </br> Minor in Business Analysis and Leadership Studies </br></h3>
-		<h3 class="head3">GPA: 3.63/4.00</br></br></br></br></h3>
-
-		<h2 class="head2"> Lakewood High School&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <font size="3" class="years" color="#E0D54E">August 2013 - May 2017</font></br></h2>
-		<h3 class="head3"> International Baccalaureate Diploma
-
-	</div>
+<div id="main">
 
 
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Educations.html">Education</a>
+  <a href="#">Honors</a>
+  <a href="#">Work Experience</a>
+  <a href="#">Skills and Interests</a>
+</div>
+
+<div id="main" style="z-index: 1;">
+  <span style="font-size:3vw;cursor:pointer; color: #797575; position: fixed" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+  <div class="margin" style="color: #797575; max-height: 300px; ">
+    <h1 class="h1"> Education</h1>
+    <hr style="height: .15vw; border-color: #797575; background-color: #797575"/>
+
+    <div style="max-width: 800px">
+
+    <h2 class="h2head" style="float: left; display: block"> University of Colorado Boulder &nbsp; <small style="color: #E0D54E;" class="h3top">August 2017 - May 2021</small></h2>
+
+    <h3 class="h3" style=" text-align: left"> B.S. Computer Science and Minor in Business and Leadership Studies</h3>
+
+    <h3 class="h3" style=" text-align: left">GPA: 3.63/4.00</h3>
+
+    <h2 class="h2head" style="float: left; padding-right: 10vw">Lakewood High School  &nbsp;
+    <small class="h3bottom" style="color:#E0D54E; "> August 2013 - May 2017 </small></h2> 
+    <h3 class="h3" style="text-align: left"> International Baccalaureate Diploma</h3>
+  
+  </div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
 
 
 
 
 
 
-
-
-
-	</div>
 </body>
 
 
+</div>
 
 
 
 
 
 
-</html>
+<!--
+    <div class=tablestyle >
+      <table style="width:150%">
+        <tr height="50">
+          <th> NAME </th> <td> Jon Abrahamson </td>
+        </tr>
+        <tr height="50">
+          <th> D.O.B </th> <td> 05-05-1999 </td><td>
+        </tr>
+        <tr height="50">
+          <th> PHONE </th> <td> +1 720-425-3716 </td>
+        </tr>
+        <tr height="50">
+          <th> EMAIL </th> <td> jcabrahamson9@gmail.com </br> jon.abrahamson@colorado.edu </td>
+        </tr>
+      </table>
+    </div>
+-->
