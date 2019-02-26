@@ -77,7 +77,7 @@
 #particles-js{
   position: absolute;
   width: 100%;
-  height: 120%;
+  height: 100%;
   right:0;
   top: 0;
   left: 0;
@@ -97,9 +97,7 @@
     color: #fff;
     text-align: center;
   }
-  div {
-    height: 100%;
-  }
+
   /* Pattern styles */
   div.container {
   }
@@ -125,18 +123,19 @@
   /*next two added for simplicity when viewing on mobile*/
   @media screen and (min-width: 801px) {
     
-    div.menu{
+    .menu{
       font-size: 20px;
     }
-    div.example  {
-      font-size: 80px;
+    .example  {
+      padding-top: 30px;
+      font-size: 60px;
     }
     .name {
-      font-size: 30px;
+      font-size: 25px;
       padding-left: 20px
     }
     .title{
-      font-size: 20px;
+      font-size: 18px;
       padding-left: 20px;
       padding-right:20px;
     }
@@ -144,21 +143,21 @@
       display:none;
     }
     .year{
-      font-size: 20px;
+      font-size: 18px;
       padding-left: 20px;
       padding-right:20px;
     }
-    div.desc{
+    .desc{
       font-size: 17px;
       text-align: left;
       padding-left: 20px
     }
-    div.container {
+    .container {
     display: table;
     width: 100%;
     }
 
-    div.right-half {
+    .right-half {
     /*right: 0px;*/
     width: 65%;
     padding-right: 20px;
@@ -168,7 +167,7 @@
     #particles-js{
   position: absolute;
   width: 110%;
-  height: 110%;
+  height: 100%;
   right:0;
   top: 0;
   left: 0;
@@ -177,12 +176,13 @@
   overflow: hidden;
   background-color: #010101;
 }
-    div.menu{
+    .menu{
       font-size: 15px;
       
     }
-    div.example  {
+    .example  {
       font-size: 45px;
+      padding-top: 50px;
     }
     .name {
       font-size: 20px;
@@ -197,7 +197,7 @@
       font-size: 12px;
       padding-right: 30px;
     }
-    div.desc{
+    .desc{
       font-size: 12px;
       text-align: left;
       padding-left: 20px;
@@ -215,8 +215,8 @@
   @media screen and (max-width: 500px) {
     #particles-js{
   position: absolute;
-  width: 100%;
-  height: 200%;
+  width: 110%;
+  height: 100%;
   right:0;
   top: 0;
   left: 0;
@@ -225,23 +225,26 @@
   overflow: hidden;
   background-color: #010101;
 }
-    div.text{
-      margin-top: -10px;
-      margin-bottom: -100px;
-      padding: 0 0 0 0;
-      line-height: 1em;
-      font-size: 15px;
-    }
-    div.menu{
+
+  div.spacing{
+    line-height: 1px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-bottom: 0;
+  }
+
+    .menu{
       font-size: 15px;
       
     }
-    div.example  {
-      padding-top: 30px;
+    .example  {
+      padding-top: 50px;
       font-size: 35px;
+      padding-bottom: 10px;
     }
     .name {
       font-size: 18px;
+      line-height: 0;
     }
     .title{
       font-size: 10px;
@@ -252,13 +255,13 @@
     .year{
       display: none;
     }
-    div.desc{
+    .desc{
       font-size: 10px;
       text-align: left;
       padding-left: 20px;
       padding-right:20px;
     }
-    div.right-half {
+    .right-half {
     /*right: 0px;*/
     width: 100%;
     padding-left: 20px;
@@ -308,43 +311,40 @@ function closeNav() {
 }
 </script>
 
-
+<div class="spacing">
 <div class="text" style="position: absolute; top: 7vw; left: 7vw; height: 30%; width: 100%; color: white">
           <div class="right-half">
             <article>
               
-              <div class="example" style="text-align: left">Education</div>
+              <div class="example" style="text-align: left; ">Education</div>
               <hr style="height: .15vw; border-color: #797575; background-color: #797575"/>
               
               <br/>
               <br/>
-              <div style="line-height: 50px"><font class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">University of Colorado at  Boulder</font><span class="year" style="position:static; vertical-align: baseline; float: right;">August 2017 - May 2021 (Expected)</span><font 
-              </div>
-              <div class="secondary" style="font-family: 'Poppins', sans-serif;text-align: left;">August 2017 - May 2021 (Expected)</div>
+
+              <div style="line-height: 10px">
+              <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;text-align: left;">University of Colorado at  Boulder</p><span class="year" style="position:static; vertical-align: baseline; float: right; color: #878583">August 2017 - May 2021 (Expected)</span>
+              <p class="secondary" style="font-family: 'Poppins', sans-serif;text-align: left; color: #878583"> August 2017 - May 2021 (Expected)</p>
               </br>
-              <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"> B.S. Computer Science, College of Engineering 
+              <p class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"> B.S. Computer Science, College of Engineering </br> </p>
+              <p class="title" style="font-family: 'Poppins', sans-serif;text-align: left;">Business Minor, Leeds School of Business
               </br>
-              Business Minor, Leeds School of Business
-              </div>
-
-              <div class="desc">
-                GPA: 3.62
-              </div>
-
-              </br></br>
-
-              <div style="line-height: 50px"><font class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Lakewood High School</font><span class="year" style="position:static; vertical-align: baseline; float: right;">August 2014 - May 2017</span>
-              </div>
+              <p class="desc">GPA: 3.62 </br></p>
+            </p></div>
+  
+      
+              <div style="line-height: 10px">
+              <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;text-align: left; padding-top: 50px">Lakewood High School</p><span class="year" style="position:static; vertical-align: baseline; float: right; color: #878583">August 2014 - May 2017</span>
+              <p class="secondary" style="font-family: 'Poppins', sans-serif;text-align: left; color: #878583"> August 2014 - May 2017</p>
               </br>
-              <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"> International Baccalaureate Program 
-              </div>
-
-              <div class="desc">
-                GPA: 4.85
-              </div>
+              <p class="title" style="font-family: 'Poppins', sans-serif;text-align: left;">International Baccalaureate Program
+              </br>
+              <p class="desc">GPA: 4.85 </br></p>
+            </p></div>
             </article>
         </div>
 
+</div>
 </div>
 
 
