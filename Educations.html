@@ -140,6 +140,14 @@
       padding-left: 20px;
       padding-right:20px;
     }
+    .secondary{
+      display:none;
+    }
+    .year{
+      font-size: 20px;
+      padding-left: 20px;
+      padding-right:20px;
+    }
     div.desc{
       font-size: 17px;
       text-align: left;
@@ -156,7 +164,19 @@
     padding-right: 20px;
     }
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px) and (min-width: 501px) {
+    #particles-js{
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  right:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #010101;
+}
     div.menu{
       font-size: 15px;
       
@@ -169,6 +189,13 @@
     }
     .title{
       font-size: 12px;
+    }
+    .secondary{
+      display: none;
+    }
+    .year{
+      font-size: 12px;
+      padding-right: 30px;
     }
     div.desc{
       font-size: 12px;
@@ -183,7 +210,62 @@
     padding-right: 20px;
     }
     
-  }   
+  }  
+
+  @media screen and (max-width: 500px) {
+    #particles-js{
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  right:0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #010101;
+}
+    div.text{
+      margin-top: -10px;
+      margin-bottom: -100px;
+      padding: 0 0 0 0;
+      line-height: 1em;
+      font-size: 15px;
+    }
+    div.menu{
+      font-size: 15px;
+      
+    }
+    div.example  {
+      padding-top: 30px;
+      font-size: 35px;
+    }
+    .name {
+      font-size: 18px;
+    }
+    .title{
+      font-size: 10px;
+    }
+    .secondary{
+      font-size: 10px;
+    }
+    .year{
+      display: none;
+    }
+    div.desc{
+      font-size: 10px;
+      text-align: left;
+      padding-left: 20px;
+      padding-right:20px;
+    }
+    div.right-half {
+    /*right: 0px;*/
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    
+  }  
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 10px;}
     .sidenav a {font-size: 13px;}
@@ -236,8 +318,9 @@ function closeNav() {
               
               <br/>
               <br/>
-              <div style="line-height: 50px"><font class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">University of Colorado at  Boulder</font><span class="title" style="position:static; vertical-align: baseline; float: right;">August 2017 - May 2021 (Expected)</span>
+              <div style="line-height: 50px"><font class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">University of Colorado at  Boulder</font><span class="year" style="position:static; vertical-align: baseline; float: right;">August 2017 - May 2021 (Expected)</span><font 
               </div>
+              <div class="secondary" style="font-family: 'Poppins', sans-serif;text-align: left;">August 2017 - May 2021 (Expected)</div>
               </br>
               <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"> B.S. Computer Science, College of Engineering 
               </br>
@@ -250,7 +333,7 @@ function closeNav() {
 
               </br></br>
 
-              <div style="line-height: 50px"><font class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Lakewood High School</font><span class="title" style="position:static; vertical-align: baseline; float: right;">August 2014 - May 2017</span>
+              <div style="line-height: 50px"><font class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Lakewood High School</font><span class="year" style="position:static; vertical-align: baseline; float: right;">August 2014 - May 2017</span>
               </div>
               </br>
               <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"> International Baccalaureate Program 
