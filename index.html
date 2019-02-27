@@ -108,6 +108,27 @@ div.fixed{
   transform: translate(-50%, -50%);
   background: rgba(150, 150, 150, 0.7);
 }
+
+  @media screen and (min-width: 501px) {
+
+    .square{
+      max-width: 500px; 
+      width: 50%;
+    }
+    
+  }  
+
+  @media screen and (max-width: 500px) {
+
+    .square{
+      width: 30%;
+    }
+    
+  }  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 13px;}
+  }
 </style>
 </head>
 
@@ -152,7 +173,7 @@ function closeNav() {
 
 <center>
   </br></br></br></br></br></br></br></br></br></br></br></br></br>
-  <div style="max-width: 500px; width: 50%vw; background:rgba(150, 150, 150, 0.7);padding:10px; ">
+  <div class="square" style=" background:rgba(150, 150, 150, 0.7);padding:10px; ">
     <span style="font-size:4vw; color: white" >
       &nbsp; Jon Abrahamson </br>
     </span>
