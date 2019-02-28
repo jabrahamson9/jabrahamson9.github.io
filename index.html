@@ -101,7 +101,7 @@ body, html{
   background-size: cover;
 }
 div.fixed{
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   height: 15%;
@@ -115,17 +115,36 @@ div.fixed{
       max-width: 500px; 
       width: 50%;
     }
+    .centerpiece{
+      
+    }
 
   }  
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px) and  (min-width: 51px){
 
     .square{
       width: 70%;
     }
+    .centerpiece{
+      margin-top: 12%
+    }
 
     
   }  
+
+  @media screen and (max-width: 500px) {
+
+    .square{
+      width: 70%;
+    }
+    .centerpiece{
+      margin-top: 25%
+    }
+
+    
+  }  
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 10px;}
     .sidenav a {font-size: 13px;}
