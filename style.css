@@ -34,8 +34,8 @@
   .content{
     display: inline-block;
     width: 55%;
-    background-color: #3DD447;
-    opacity: .6;
+    background-color: #4E4E4E;
+    opacity: .8;
     border-radius: 3vw 3vw 3vw 3vw;
     z-index: 8;
 
@@ -43,18 +43,18 @@
 
   .work-header{
       font-size: 3vw;
-      color: black;
+      color: #D5C349;
       font-weight: bold;
   }
   .work-content{
       font-size: 2vw;
       padding-left: 5%;
       padding-right: 5%;
-      color: black;
+      color: white;
   }
   .work-date{
       font-size: 1.7vw;
-      color: #0C5110;
+      color: #898989;
       font-weight: bold;
   }
 
@@ -62,17 +62,18 @@
       text-align: center;
       padding-bottom: 3%;
       padding-top: 3%;
+      color: white;
   }
 
   #particles-js{
-    position: absolute;
+    position: fixed;
     width: 100%;
     right:0;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
-    overflow: hidden;
+    bottom: 0;
+    height: auto;
     background-color: #010101;
     z-index: -1;
   }
@@ -156,3 +157,19 @@
   .tool:hover {
       color:#F29E0C !important;
   }
+
+
+  .ad-left {
+      float: left;
+    }
+     
+    .ad-right {
+      float: right;
+      margin-left: 10px;
+    }
+     
+    .entire-thing {
+      width: 650px;
+      text-align: center;
+    }
+    
