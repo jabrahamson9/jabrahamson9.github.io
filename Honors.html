@@ -1,374 +1,79 @@
 <!DOCTYPE html>
-<html>
-<head>
+<HTML>
 
-  <link rel="icon" 
-      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwX68I5fUDij20aM754W498wkUXltYkBcWrjbDGMP3hKSJuV1o">
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta charset=""utf-8>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-#main {
- 
-  transition: margin-left .5s;
-  padding: 16px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-.dropbtn {
-  background-color: #000000;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  opacity: .7;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-#particles-js{
-  position: absolute;
-  width: 100%;
-  height: 200%;
-  right:0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-color: #010101;
-}
-.text{
-  position: absolute;
-  width:90vw;
-}
-  * {
-    box-sizing: border-box;
-  }
-  section {
-    color: #fff;
-    text-align: center;
-  }
+<HEAD>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Work 2</title>
+</HEAD>
 
-  /* Pattern styles */
-  div.container {
-  }
-  div.left-half {
-    
-  }
-  div.right-half {
-    
-  }
-  div.menu{
-  }
-  div.example {
-  }
-  div.name {
-  }
-  div.title {
-    padding-bottom: 20px;
-  }
-  div.desc{
-  }
+<BODY style="background-color: black; ">
 
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
-  /*next two added for simplicity when viewing on mobile*/
-  @media screen and (min-width: 801px) {
-    
-    .menu{
-      font-size: 20px;
-    }
-    .example  {
-      padding-top: 30px;
-      font-size: 60px;
-    }
-  .slide{
-    font-size: 2vw;
-  }
-    .name {
-      font-size: 25px;
-      padding-left: 20px
-    }
-    .title{
-      font-size: 18px;
-      padding-left: 20px;
-      padding-right:20px;
-    }
-    .secondary{
-      display:none;
-    }
-    .year{
-      font-size: 18px;
-      padding-left: 20px;
-      padding-right:20px;
-    }
-    .desc{
-      font-size: 17px;
-      text-align: left;
-      padding-left: 20px
-    }
-    .container {
-    display: table;
-    width: 100%;
-    }
-
-    .right-half {
-    /*right: 0px;*/
-    width: 65%;
-    padding-right: 20px;
-    }
-  }
-  @media screen and (max-width: 800px) and (min-width: 501px) {
-    #particles-js{
-  position: absolute;
-  width: 110%;
-  height: 150%;
-  right:0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-color: #010101;
-}
-    .menu{
-      font-size: 15px;
-      
-    }
-    .slide{
-    font-size: 3vw;
-  }
-    .example  {
-      font-size: 45px;
-      padding-top: 50px;
-    }
-    .name {
-      font-size: 20px;
-    }
-    .title{
-      font-size: 12px;
-    }
-    .secondary{
-      display: none;
-    }
-    .year{
-      font-size: 12px;
-      padding-right: 30px;
-    }
-    .desc{
-      font-size: 12px;
-      text-align: left;
-      padding-left: 20px;
-      padding-right:20px;
-    }
-    div.right-half {
-    /*right: 0px;*/
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-    
-  }  
-
-  @media screen and (max-width: 500px) {
-    #particles-js{
-  position: absolute;
-  width: 110%;
-  height: 110%;
-  right:0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  background-color: #010101;
-}
-  .body{
-    max-height: 100%
-  }
-
-  .slide{
-    font-size: 5vw;
-  }
-
-    .menu{
-      font-size: 15px;
-      
-    }
-    .example  {
-      padding-top: 50px;
-      font-size: 35px;
-      padding-bottom: 10px;
-    }
-    .name {
-      font-size: 18px;
-      line-height: 0;
-    }
-    .title{
-      font-size: 10px;
-    }
-    .secondary{
-      font-size: 10px;
-    }
-    .year{
-      display: none;
-    }
-    .desc{
-      font-size: 10px;
-      text-align: left;
-      padding-left: 20px;
-      padding-right:20px;
-    }
-    .right-half {
-    /*right: 0px;*/
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    }
-    
-  }  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 10px;}
-    .sidenav a {font-size: 13px;}
-  }
-</style>
-
-</head>
-
-<body style="max-height: 100%">
-
-
-<div id="particles-js"></div>
-<script type="text/javascript" src="particles.js"></script>
-<script type="text/javascript" src="app.js"></script>
-
-
-<div id="main">
-<div class="text">
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="Educations.html">Education</a>
-  <a href="Honors.html">Honors</a>
-  <a href="Work.html">Work Experience</a>
-  <a href="Skills.html">Skills and Interests</a>
-  <a href="Resume.html">Full Resume</a>
-  </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-  <!-- <a href="Resume.html" >Audio Visualizer</a> -->
-</div>
-<!-- hi -->
-<div id="main" style="z-index: 1;">
-  <span class="slide" style="cursor:pointer; color: #797575; position: absolute; z-index: 99999"  onclick="openNav()">&#9776; Menu</span>
-</div>
-
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-
-<div class="text" style="position: absolute; top: 7vw; left: 7vw; height: 30%; width: 100%; color: white">
-          <div class="right-half">
-            <article>
-              
-              <div class="example" style="text-align: left; ">Honors</div>
-              <hr style="height: .15vw; border-color: #797575; background-color: #797575"/>
-              
-              <br/>
-              <br/>
-
-              <div style="line-height: 2.5vw">
-              <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;text-align: left;">Colorado Boettcher Scholarship</p>
-              <p class="title" style="font-family: 'Poppins', sans-serif;text-align: left; "> A full ride, merit based scholarship awarded to the top 42 applicants valued at over $150,000. The scholarships purpose is to support Colorado’s top students by providing them with Colorado scholarships to attain an excellent in-state education, a vast network of alumni and community leaders and access to additional opportunities that enrich their time in college.  </br> </p>
-            <img src="https://boettcherfoundation.org/wp-content/uploads/2015/11/boettcher-foundation.png" style="padding-bottom: 3vw" > 
-              </div> 
-  
-
-              <div style="line-height: 2.5vw">
-              <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;text-align: left;">Presidents Leadership Class</p>
-              <p class="title" style="font-family: 'Poppins', sans-serif;text-align: left; "> 
-                Selected out of the top 54 applicants at the University of Colorado Boulder to be awarded a $4,000 scholarship along with admission into a leahership development program for outstanding undergraduates at the Universtiy. It is a comprehensive program combining both academic and experiential curricula to expose students to leadership lessons on many different levels.
-              </br> </p>
-          
-              </div>
-
-
-              <div style="line-height: 2.5vw">
-              <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;text-align: left;">Engineering Honors Program</p>
-              <p class="title" style="font-family: 'Poppins', sans-serif;text-align: left; "> 
-                Selected out of the top 150 applicants at the University of Colorado Boulder to be a part of the Engineering Honors Program. The program is committed to the cultivation of community. We bring together students and faculty who are deeply ambitious without being competitive with each other, committed to the success of others without sacrificing their own achievements, and who enjoy engineering without being defined by it.
-              </br> </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Colorado_Buffaloes_wordmark.svg/1200px-Colorado_Buffaloes_wordmark.svg.png" style="width: 100px; height: 100px">
-              </div>
-
-
-
-            </article>
+    <div class="dropdown">
+        <i class="fa fa-bars" style="font-size: 2.5vw; padding: 1.5%; padding-bottom: 3%; color: white" aria-hidden="true"></i>    
+        <div class="dropdown-content">
+            <div style="text-align: center; font-size: 1.5vw; padding-bottom: 5%; ">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="Education.html">Education</a></p>
+                <p><a href="Honors.html">Honors</a></p>
+                <p><a href="Work.html">Work Experience</a></p>
+                <p><a href="Skill.html">Skills/Interests</a></p>
+            </div>
         </div>
+    </div>
 
-</div>
+    <div class="page-title">
+        <h1 style="font-size: 4.5vw; font-weight: bold; color: white">Honors</h1>
+        <hr color="black" style="width: 50%; height: .1vw;">
+    </div>
 
 
-</div>
-</div>
 
-</body>
-</html>
+    <div style="width: 50%; margin: 0 auto;">
+    <div style="line-height: 2.5vw; text-align: center;">
+        <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;">Colorado Boettcher Scholarship</p>
+        <p class="title" style="font-family: 'Poppins', sans-serif; "> A full ride, merit based scholarship awarded to the top 42 applicants valued at over $150,000. The scholarships purpose is to support Colorado’s top students by providing them with Colorado scholarships to attain an excellent in-state education, a vast network of alumni and community leaders and access to additional opportunities that enrich their time in college.  </br> </p>
+        <img src="https://boettcherfoundation.org/wp-content/uploads/2015/11/boettcher-foundation.png" style="padding-bottom: 3vw; width: 40%; height: auto;" > 
+    </div> 
+
+</br></br>
+    <div style="line-height: 2.5vw; text-align: center;">
+        <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;">Presidents Leadership Class</p>
+        <p class="title" style="font-family: 'Poppins', sans-serif; "> 
+          Selected out of the top 54 applicants at the University of Colorado Boulder to be awarded a $4,000 scholarship along with admission into a leahership development program for outstanding undergraduates at the Universtiy. It is a comprehensive program combining both academic and experiential curricula to expose students to leadership lessons on many different levels.
+        </br> </p>
+    </div>
+
+
+    <div style="line-height: 2.5vw; text-align: center;">
+        <p class="name" style="font-family: 'Ubuntu', sans-serif;color: #d19c0a;">Engineering Honors Program</p>
+        <p class="title" style="font-family: 'Poppins', sans-serif;"> 
+          Selected out of the top 150 applicants at the University of Colorado Boulder to be a part of the Engineering Honors Program. The program is committed to the cultivation of community. We bring together students and faculty who are deeply ambitious without being competitive with each other, committed to the success of others without sacrificing their own achievements, and who enjoy engineering without being defined by it.
+        </br> </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Colorado_Buffaloes_wordmark.svg/1200px-Colorado_Buffaloes_wordmark.svg.png" style=" width: 20%; height: auto;">
+    </div>
+</br></br></br></br>
+    </div>  
+
+
+    
+
+            
+
+
+
+
+</BODY>
+
+</HTML>
+
+ 

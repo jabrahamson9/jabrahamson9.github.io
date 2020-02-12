@@ -15,10 +15,11 @@
     z-index: 1;
     border-radius: 1vw 3vw 3vw;
     border-color: black;
-    background-color: lightskyblue;
+    background-color: #797a7d;
     padding: 5%;
     right:0;
     width: auto;
+    color: black;
   }
   
   
@@ -88,6 +89,11 @@
     border: .5vw solid black;
     background: rgba(156, 156, 156, 0.5);
 }
+
+@media screen and (max-width: 1000px) {
+  .column {float: none; height: auto; padding: 5%; }
+
+}
   
   /* Clear floats after the columns */
   .row:after {
@@ -108,9 +114,11 @@
   .column:hover{background: rgba(156, 156, 156, 0.7);}
 
   
-
+ a{
+   color: black;
+ }
   a:hover{
-    color: #949494;
+    color: #d19c0a;
   }
   .responsive {
     width: 25%;
@@ -159,17 +167,11 @@
   }
 
 
-  .ad-left {
-      float: left;
-    }
-     
-    .ad-right {
-      float: right;
-      margin-left: 10px;
-    }
-     
-    .entire-thing {
-      width: 650px;
-      text-align: center;
-    }
-    
+  .name{
+    font-size: 2.5vw;
+  }
+
+  .title{
+    font-size: 1vw;
+    color: #cccccc;
+  }
