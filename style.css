@@ -265,3 +265,96 @@ a:hover {
   white-space: normal;
   border-radius: 2vw;
 }
+
+/*FOR PROTO*/
+.toolbar {
+  display: block;
+  position: fixed;
+  font-size: 1vw;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 1%;
+  border-bottom: 0.25vw solid white;
+  background-color: black;
+  padding-bottom: 1%;
+}
+
+.inline {
+  display: inline-block;
+  padding-right: 2%;
+  padding-left: 2%;
+  vertical-align: bottom;
+  font-size: 2vw;
+}
+
+.centerimage-container {
+  text-align: center;
+  padding-top: 8vw;
+}
+
+.centerimage {
+  display: inline-block;
+  max-width: 50%;
+  height: auto;
+}
+
+.leadtext {
+  text-align: center;
+  font-size: 3.2vw;
+}
+
+/* .leadtexttwo{
+    text-align: center;
+    font-size: 1vw;
+    padding-left: 8%;
+    padding-right: 8%; 
+} */
+
+.container {
+  text-align: left;
+  display: block;
+  width: 85%;
+  right: 0%;
+}
+
+.factscontainer {
+  text-align: center;
+  padding-top: 2vw;
+}
+
+.factsinline {
+  display: inline-block;
+}
+
+.footbar {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  border-top: 0.1vw solid black;
+  background-color: rgb(229, 226, 226);
+}
+
+.footerinline {
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 0.8vw;
+}
+
+.textboxcontent {
+  display: inline-block;
+  width: 33%;
+  height: auto;
+  background-color: cornflowerblue;
+  opacity: 0.8;
+  padding: 2%;
+  text-align: center;
+  font-size: 1.5vw;
+  vertical-align: top;
+  white-space: normal;
+  border-radius: 2vw;
+}
